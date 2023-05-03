@@ -1,0 +1,105 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "ignorePatterns": ["*.css", "*.scss"],
+  "parser": "@typescript-eslint/parser",
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "import", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      { "fixStyle": "inline-type-imports" }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "parent", "sibling", "internal"],
+        "pathGroups": [
+          {
+            "pattern": "react**",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "@testing-library/**",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@src/**",
+            "group": "parent",
+            "position": "before"
+          },
+          {
+            "pattern": "@services/**",
+            "group": "sibling",
+            "position": "before"
+          },
+          {
+            "pattern": "@features/**",
+            "group": "sibling",
+            "position": "before"
+          },
+          {
+            "pattern": "@utilities/**",
+            "group": "sibling",
+            "position": "before"
+          },
+          {
+            "pattern": "@constants/**",
+            "group": "sibling",
+            "position": "before"
+          },
+          {
+            "pattern": "@hooks/**",
+            "group": "sibling",
+            "position": "before"
+          },
+          {
+            "pattern": "@layouts/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@components/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "@components",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@containers",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "./**",
+            "group": "internal",
+            "position": "before"
+          }
+        ],
+        "newlines-between": "always",
+        "pathGroupsExcludedImportTypes": ["react"],
+        "distinctGroup": false,
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "off",
+    "no-undef": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

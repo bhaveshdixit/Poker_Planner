@@ -1,0 +1,11 @@
+.card {
+  max-width: 80px;
+  max-height: 95px;
+  cursor: pointer;
+}
+
+.card__value {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

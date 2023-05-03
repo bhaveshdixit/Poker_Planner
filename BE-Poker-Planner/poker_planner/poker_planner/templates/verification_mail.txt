@@ -1,0 +1,1 @@
+Hi, thank you for registering in Poker Planner.\nClick on the link to verify {{fe_base_url}}verify/{{token_key}}

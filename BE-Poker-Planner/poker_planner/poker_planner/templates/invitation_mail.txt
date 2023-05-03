@@ -1,0 +1,3 @@
+This is an invitation from {{invitor}} to play poker planner. 
+Click on the link to accept invitation.
+{{fe_base_url}}{{token_key}}

@@ -1,0 +1,17 @@
+.navbar__imgBox {
+  height: 80px;
+  width: 80px;
+}
+
+.logo {
+  -webkit-filter: drop-shadow(0 0 1px #6c757da1);
+  filter: drop-shadow(0 0 1px #6c757da1);
+  transition: all 200ms;
+  height: 80px;
+
+  &:hover {
+    -webkit-filter: drop-shadow(0 0 5px #6c757d);
+    filter: drop-shadow(0 0 5px #6c757d);
+    transition: all 100ms;
+  }
+}

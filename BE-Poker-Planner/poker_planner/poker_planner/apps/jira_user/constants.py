@@ -1,0 +1,7 @@
+USERNAME_LENGTH = 50
+JIRA_TOKEN_LENGTH = 1000
+JIRA_URL_LENGTH = 255
+
+JIRA_USER_NOT_EXIST_ERROR = 'token not exist or expired'
+
+INVALID_URL_ERROR = 'invalid baseurl'
